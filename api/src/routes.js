@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 const Automovel = require('./controllers/automovel');
+const Concessionaria = require('./controllers/concessionaria');
+const Cliente = require('./controllers/cliente');
+const Alocacao = require('./controllers/alocacao');
+const Venda = require('./controllers/venda');
 
 // Rota raiz
 router.get('/', (req, res) => {
@@ -10,5 +14,9 @@ router.get('/', (req, res) => {
 
 // Rota para obter todos os automóveis
 router.get('/automoveis', Automovel.read);
+router.get('/concessionarias', Concessionaria.read);
+router.get('/clientes', Cliente.read);
+router.get('/alocacoes', Alocacao.read);
+router.get('/vendas', Venda.read);
 
 module.exports = router;
