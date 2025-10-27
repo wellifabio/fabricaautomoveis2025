@@ -8,7 +8,7 @@ fetch(uri)
     });
 
 const main = document.querySelector('main');
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 11; i++) {
     const area = document.createElement('div');
     area.id = `area-${i}`;
     area.innerHTML = `<p>${i}</p>`;
