@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root{
+    --c1: #ffffff;
+    --c2: #707070;
+    --c3: #7814ff;
+    --c4: #0000ff;
+}
+
 body{
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -25,4 +32,8 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.alocado{
+    background-color: var(--c4);
 }
