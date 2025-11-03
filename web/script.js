@@ -50,7 +50,7 @@ function listarVeiculos(area) {
         .then(data => {
             for (const alocacao of data) {
                 const item = document.createElement('div');
-                item.textContent = `${alocacao.possui.modelo} R$ ${alocacao.possui.preco.toFixed(2)}`;
+                item.innerHTML = `${alocacao.possui.modelo} R$ ${alocacao.possui.preco.toFixed(2)} <button>Vender</button>`;
                 modalVeiculos.querySelector('.veiculos').appendChild(item);
             }
             if (data.length == 0)

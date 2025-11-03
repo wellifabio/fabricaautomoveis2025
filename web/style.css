@@ -59,7 +59,7 @@ main {
     justify-content: space-between;
     color: var(--c3);
 
-    & h2{
+    & h2 {
         margin: 20px;
     }
 
@@ -86,6 +86,22 @@ main {
             display: flex;
             justify-content: space-between;
         }
+    }
+
+    & button {
+        background-color: var(--c3);
+        border: none;
+        color: var(--c1);
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: medium;
+    }
+
+    & button:hover {
+        background-color: var(--c4);
+        box-shadow: 0 0 5px #000;
+        transform: scale(1.05);
     }
 }
 
