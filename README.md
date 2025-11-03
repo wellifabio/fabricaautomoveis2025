@@ -27,3 +27,5 @@ DATABASE_URL="mysql://root@localhost:3306/fabrica2025"
 ## Screenshots
 ### Página Inicial
 ![Página Inicial](./docs/screenshot01.png)
+
+Continue o desenvolvimento das outras funcionalidades conforme Aula de Projeto de Software.
