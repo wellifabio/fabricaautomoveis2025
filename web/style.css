@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --c1: #ffffff;
     --c2: #707070;
     --c3: #7814ff;
     --c4: #0000ff;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     padding: 20px;
     display: flex;
@@ -19,13 +19,13 @@ body{
     align-items: center;
 }
 
-main{
+main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-div{
+.area {
     border: 1px solid black;
     width: 100px;
     height: 150px;
@@ -34,6 +34,66 @@ div{
     align-items: center;
 }
 
-.alocado{
+.alocado {
     background-color: var(--c4);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.janela {
+    width: 400px;
+    height: fit-content;
+    background-color: var(--c1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--c3);
+
+    & h2{
+        margin: 20px;
+    }
+
+    & .cabecalho {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--c2);
+        padding: 10px;
+    }
+
+    & .veiculos {
+        padding: 0px 20px 20px 20px;
+        width: 100%;
+        height: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.oculto {
+    display: none;
+}
+
+main div:hover {
+    cursor: pointer;
+    background-color: var(--c2);
 }
